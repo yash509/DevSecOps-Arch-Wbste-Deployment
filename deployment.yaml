@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pe-wa-deployment
+  name: wnste-arch-deployment
 spec:
   replicas: 6  # Number of desired replicas
   selector:
     matchLabels:
-      app: pe-wa
+      app: wnste-arch
   template:
     metadata:
       labels:
-        app: pe-wa
+        app: wnste-arch
     spec:
       containers:
-      - name: pe-wa
-        image: yash5090/pe-wa:latest
+      - name: wnste-arch
+        image: yash5090/wnste-arch:latest
         ports:
         - containerPort: 5000
