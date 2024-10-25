@@ -291,7 +291,7 @@ pipeline {
         stage('Deploy to Docker Container'){
             steps{
                 //dir('BMI Calculator (JS)') {
-                    sh "docker run -d --name wnste-arch -p 3000:3000 ${IMAGE_NAME}:${TAG}" 
+                    sh "docker run -d --name wnste-arch -p 5000:5000 ${IMAGE_NAME}:${TAG}" 
                 //}
             }
         }
